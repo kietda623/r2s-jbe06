@@ -76,3 +76,20 @@ BEGIN
 END//
 
 DELIMITER ;
+
+
+-- câu 8 --
+DELIMITER //
+
+create procedure create_order(
+	in p_order_date datetime,
+    in p_customer_id int, 
+	in p_employee_id int
+)
+BEGIN
+	insert into Orders(order_date, customer_id, employee_id)
+    values(p_order_date, p_customer_id, p_employee_id);
+END//
+
+DELIMITER ;
+
