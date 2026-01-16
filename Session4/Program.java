@@ -55,7 +55,8 @@ public class Program {
                         break;
 
                     case 4:
-                        for (int i = 0; i <; i++)
+                        pm.displayAllProducts();
+                        break;
 
                     case 5:
                         System.out.println("Exiting the program...");

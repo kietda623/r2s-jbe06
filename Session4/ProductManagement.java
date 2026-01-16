@@ -36,4 +36,16 @@ public class ProductManagement {
         product.setQuantityStock(newQuantity);
         System.out.println("Updated new quantity!");
     }
+
+    public void displayAllProducts() {
+        if (productCount == 0) {
+            System.out.println("No products available.");
+            return;
+        }
+
+        for (int i = 0; i < productCount; i++) {
+            products[i].displayProductInfo();
+            System.out.println("-------------------");
+        }
+    }
 }
